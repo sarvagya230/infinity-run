@@ -83,6 +83,11 @@ function draw() {
   player6.resize(90,90)
   player7.resize(90,90)
   player8.resize(90,90)
+     if (frameCount%1000===0)
+    {
+      background("red")
+      text("you lost",displayWidth/2,displayHeight/2)
+    }
   
   if(player.x>500)
   {
@@ -97,6 +102,7 @@ function draw() {
   {
    
   }
+   
     obstical.lifetime=200
    
     
